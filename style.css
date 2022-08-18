@@ -44,6 +44,10 @@ body {
 
 }
 
+.selected-nav-button {
+    border-bottom: 1px solid white;
+}
+
 .nav-buttons-div {
     display: flex;
     gap: clamp(0.75rem, 0.6863rem + 0.2614vw, 1rem);
