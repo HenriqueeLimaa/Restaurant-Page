@@ -104,6 +104,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 0.5rem;
 
+    cursor: pointer;
 }
 
 .restaurant-map {
