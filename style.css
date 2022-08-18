@@ -3,6 +3,15 @@ body {
     padding: 0;
 }
 
+.contact-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0 0);
+    padding: 2rem clamp(2rem, 0.9804rem + 4.183vw, 6rem);
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -20,13 +29,66 @@ body {
     margin-bottom: 3rem;
 }
 
-.home-bg {
+.body-bg {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0 0);
     padding: 2rem clamp(2rem, -0.0392rem + 8.366vw, 10rem);
+}
+
+.menu-bg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 1.5rem;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0 0);
+    padding: 2rem clamp(2rem, 0.9804rem + 4.183vw, 6rem);
+}
+
+@media(max-width: 650px){
+    .menu-bg {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+.food-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem 1.5rem 0 1.5rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0 0);
+}
+
+.food-img {
+    width: 10rem;
+}
+
+.food-ingredients {
+    color: white;
+
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+
+    max-width: 60%;
+
+    margin-bottom: 1.5rem;
+}
+
+.food-title {
+    display: flex;
+    justify-content: center;
+
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+    margin: 0;
 }
 
 .jacquin {
@@ -42,6 +104,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 0.5rem;
 
+}
+
+.restaurant-map {
+    width: 100%;
+    border: 1px solid white;
 }
 
 .selected-nav-button {
@@ -74,5 +141,6 @@ body {
     background-image: url('./images/background.jpg');
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
 }
