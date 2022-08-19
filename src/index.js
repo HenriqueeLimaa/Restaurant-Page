@@ -19,11 +19,11 @@ const createHeader = () => {
     header.append(nav);
 
     const homeButton = document.createElement('button');
-    homeButton.classList.add('nav-button', 'selected-nav-button'); //
+    homeButton.classList.add('nav-button');
     homeButton.textContent = 'Home';
     homeButton.addEventListener('click', () => {
         content.textContent = "";
-        createHeader()/
+        createHeader();
         createHomePage();
     })
     nav.appendChild(homeButton);
@@ -32,9 +32,6 @@ const createHeader = () => {
     menu.classList.add('nav-button');
     menu.textContent = 'Menu';
     menu.addEventListener('click', () => {
-        homeButton.classList.remove('selected-nav-button');
-        contact.classList.remove('selected-nav-button');
-        menu.classList.add('selected-nav-button');
         content.textContent = "";
         createHeader();
         createMenuPage();
