@@ -1,8 +1,10 @@
 import createContactPage from "./contact";
 import createHomePage from "./home";
 import createMenuPage from "./menu";
+import backgroundImage from './images/background.jpg'
 
 const content = document.getElementById('content');
+content.style.backgroundImage = backgroundImage;
 
 const createHeader = () => {
     const header = document.createElement('header');
