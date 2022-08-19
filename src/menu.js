@@ -1,3 +1,5 @@
+import pizzaIMG from './images/pizza.png';
+
 const createMenuPage = () => {
     const menu = document.createElement('section');
     menu.classList.add('menu');
@@ -13,7 +15,7 @@ const createMenuPage = () => {
         menuBg.appendChild(pizza1);
 
         const pizzaIcon = document.createElement('img');
-        pizzaIcon.src = '../dist/images/pizza.png';
+        pizzaIcon.src = pizzaIMG;
         pizzaIcon.classList.add('food-img');
         pizza1.appendChild(pizzaIcon);
 

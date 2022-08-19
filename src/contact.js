@@ -1,3 +1,5 @@
+import restaurantMapIMG from './images/restaurant-map.png';
+
 const createContactPage = () => {
     const contactPage = document.createElement('section');
     contactPage.classList.add('contact-bg');
@@ -14,7 +16,7 @@ const createContactPage = () => {
     contactPage.appendChild(adress);
 
     const restaurantMap = document.createElement('img');
-    restaurantMap.src = '../dist/images/restaurant-map.png';
+    restaurantMap.src = restaurantMapIMG;
     restaurantMap.classList.add('restaurant-map');
     contactPage.appendChild(restaurantMap);
 }

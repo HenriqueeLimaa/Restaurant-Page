@@ -1,3 +1,5 @@
+import jacquinIMG from './images/jacquin.png'
+
 const createHomePage = () => {
     const home = document.createElement('section');
     home.classList.add('home');
@@ -19,7 +21,7 @@ const createHomePage = () => {
 
     const jacquinImg = document.createElement('img');
     jacquinImg.classList.add('jacquin');
-    jacquinImg.src = './images/jacquin.png';
+    jacquinImg.src = jacquinIMG;
     homeBg.appendChild(jacquinImg);
 
     const textC = document.createElement('p');
