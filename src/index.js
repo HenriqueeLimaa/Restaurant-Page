@@ -1,8 +1,11 @@
 import createContactPage from "./contact";
 import createHomePage from "./home";
 import createMenuPage from "./menu";
+// import backgroundIMG from './images/background.png';
+import restaurantMapIMG from './images/restaurant-map.png';
 
 const content = document.getElementById('content');
+content.style.backgroundImage = 'url(https://michalosman.github.io/restaurant-page/images/background.jpg)';
 
 const createHeader = () => {
     const header = document.createElement('header');
