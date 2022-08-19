@@ -1,7 +1,7 @@
 import createContactPage from "./contact";
 import createHomePage from "./home";
 import createMenuPage from "./menu";
-import backgroundImage from './images/background.jpg'
+import backgroundImage from './images/background.png';
 
 const content = document.getElementById('content');
 content.style.backgroundImage = backgroundImage;
