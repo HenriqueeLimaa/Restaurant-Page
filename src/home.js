@@ -19,7 +19,7 @@ const createHomePage = () => {
 
     const jacquinImg = document.createElement('img');
     jacquinImg.classList.add('jacquin');
-    jacquinImg.src = '../dist/images/jacquin.png';
+    jacquinImg.src = './images/jacquin.png';
     homeBg.appendChild(jacquinImg);
 
     const textC = document.createElement('p');
